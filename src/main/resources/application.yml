@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 5000
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 开启了驼峰命名和下划线命名得自动转化
